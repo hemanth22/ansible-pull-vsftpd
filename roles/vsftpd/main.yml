@@ -1,8 +1,8 @@
 ---
 - name: Ensure vsftpd server is installed
-   yum:
-     name: vsftpd
-     state: present
+  yum:
+    name: vsftpd
+    state: present
 
 - name: Ensure to take backup of vsftpd configuration
   ansible.builtin.copy:
